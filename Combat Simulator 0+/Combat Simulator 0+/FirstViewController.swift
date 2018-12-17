@@ -99,7 +99,7 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         super.init()
             health = 40
             damage = 1...3
-        ability = "StoneWall: Active"
+        ability = "Stonewall"
         }
     }
     class Prince: Unit {
@@ -107,7 +107,7 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             super.init()
             health = 20
             damage = 2...6
-            ability = "Armor: Passive"
+            ability = "Stun"
         }
     }
     class Pekka: Unit {
@@ -115,7 +115,7 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             super.init()
             health = 30
             damage = 2...4
-            ability = "Stun: Passive"
+            ability = "Spikey Armor"
         }
     }
     class Wizard: Unit {
@@ -123,7 +123,7 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             super.init()
             health = 8
             damage = 5...15
-            ability = "FireBall: Active"
+            ability = "FireBall"
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
