@@ -20,17 +20,20 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         return units[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-       // Name.text = topPickerView.selectedRow(inComponent: 1)
-       // Name.text = String(topPickerView.selectedRow(inComponent: 1))
         nameOfUnitSelected = String(topPickerView.selectedRow(inComponent: 0))
+        Player1Name.text = determineSelectionForPlayer1()
+        Player2Name.text = determineSelectionForPlayer2()
         print(nameOfUnitSelected)
     }
     
+    @IBOutlet weak var Player2Name: UILabel!
+    @IBOutlet weak var Player1Name: UILabel!
     let units = ["Giant", "Prince", "Pekka", "Wizard"]
     @IBOutlet weak var topPickerView: UIPickerView!
     @IBOutlet weak var bottomPickerView: UIPickerView!
-    @IBOutlet weak var Name: UILabel!
     var nameOfUnitSelected = ""
+    var player1 = Unit()
+    var player2 = Unit()
     override func viewDidLoad() {
         super.viewDidLoad()
         topPickerView.dataSource = self
@@ -39,67 +42,100 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         bottomPickerView.delegate = self
         
     }
-    @IBAction func checkName(_ sender: UIButton) {
-        determineSelection()
-    }
-    func determineSelection() -> String? {
-        var playerOne = Unit()
+    func determineSelectionForPlayer1() -> String? {
         switch topPickerView.selectedRow(inComponent: 0) {
         case 0:
-            Name.text = "Giant"
-            playerOne = Giant()
+            Player1Name.text = "Giant"
+            player1 = Giant()
         case 1:
-            Name.text = "Prince"
-            playerOne = Prince()
+            Player1Name.text = "Prince"
+            player1 = Prince()
         case 2:
-            Name.text = "Pekka"
-            playerOne = Pekka()
+            Player1Name.text = "Pekka"
+            player1 = Pekka()
+        case 3:
+            Player1Name.text = "Wizard"
+            player1 = Wizard()
         default:
-            Name.text = "Wizard"
-            playerOne = Wizard()
+            Player1Name.text = "Giant"
+            player1 = Giant()
         }
-        print(playerOne)
-        return Name.text
+        print(player1)
+        return Player1Name.text
+    }
+    func determineSelectionForPlayer2() -> String? {
+        switch bottomPickerView.selectedRow(inComponent: 0) {
+        case 0:
+            Player2Name.text = "Giant"
+            player2 = Giant()
+        case 1:
+            Player2Name.text = "Prince"
+            player2 = Prince()
+        case 2:
+            Player2Name.text = "Pekka"
+            player2 = Pekka()
+        case 3:
+            Player2Name.text = "Wizard"
+            player2 = Wizard()
+        default:
+            Player2Name.text = "Giant"
+            player2 = Giant()
+        }
+        print(player2)
+        return Player2Name.text
     }
     class Unit {
         var health: Int
         var damage = 1...2
-        
+        var ability = ""
         init() {
             health = 1
             damage = 1...2
+            ability = ""
         }
     }
     class Giant: Unit {
        override init() {
         super.init()
-            health = 20
-            damage = 1...2
+            health = 40
+            damage = 1...3
+        ability = "StoneWall: Active"
         }
     }
     class Prince: Unit {
         override init() {
             super.init()
-            health = 10
-            damage = 3...6
+            health = 20
+            damage = 2...6
+            ability = "Armor: Passive"
         }
     }
     class Pekka: Unit {
         override init() {
             super.init()
-            health = 15
+            health = 30
             damage = 2...4
+            ability = "Stun: Passive"
         }
     }
     class Wizard: Unit {
         override init() {
             super.init()
-            health = 5
-            damage = 5...25
+            health = 8
+            damage = 5...15
+            ability = "FireBall: Active"
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! ViewController
+        determineSelectionForPlayer2()
+        determineSelectionForPlayer1()
+        nvc.p1damage = player1.damage
+        nvc.p1health = player1.health
+        nvc.p1Name = Player1Name.text!
+        nvc.p2Name = Player2Name.text!
+        nvc.p2damage = player2.damage
+        nvc.p2health = player2.health
     }
     /*
     // MARK: - Navigation
