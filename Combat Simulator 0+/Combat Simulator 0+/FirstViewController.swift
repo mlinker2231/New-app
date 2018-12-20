@@ -5,7 +5,6 @@
 //  Created by Michael Linker on 12/11/18.
 //  Copyright © 2018 John Hersey Highschool. All rights reserved.
 //
-
 import UIKit
 
 class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
@@ -95,11 +94,11 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         }
     }
     class Giant: Unit {
-       override init() {
-        super.init()
+        override init() {
+            super.init()
             health = 40
             damage = 1...3
-        ability = "Stonewall"
+            ability = "Stonewall"
         }
     }
     class Prince: Unit {
@@ -127,6 +126,7 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Segue1" {
         let nvc = segue.destination as! ViewController
         determineSelectionForPlayer2()
         determineSelectionForPlayer1()
@@ -136,15 +136,17 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         nvc.p2Name = Player2Name.text!
         nvc.p2damage = player2.damage
         nvc.p2health = player2.health
+        nvc.p2ability = player2.ability
+        nvc.p1ability = player1.ability
+    }
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

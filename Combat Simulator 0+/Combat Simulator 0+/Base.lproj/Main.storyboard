@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f4g-en-YLw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p8s-Gy-4Wa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="4dq-I8-Ycg">
+            <objects>
+                <viewController id="eoj-ZP-TM1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4pa-ua-y74">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Giant" translatesAutoresizingMaskIntoConstraints="NO" id="ppd-Oh-Y0R">
+                                <rect key="frame" x="67" y="34" width="240" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GIANT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-1e-QA6">
+                                <rect key="frame" x="162" y="273" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H9-7J-QXf">
+                                <rect key="frame" x="0.0" y="343" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Giant is the toughest fighter. He has one layer of armor that stops 1 damage from hitting himself. He is massive and requires 40 damage to be taken to be taken down. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nWn-TT-GI7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOZ-as-BAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-753" y="-570"/>
+        </scene>
         <!--First View Controller-->
         <scene sceneID="MOD-0H-AET">
             <objects>
@@ -19,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-yu-Ji5">
-                                <rect key="frame" x="105" y="301" width="165" height="21"/>
+                                <rect key="frame" x="105" y="345" width="165" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="N2h-0r-nUk"/>
                                 </constraints>
@@ -37,7 +73,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew2-xE-Enw">
-                                <rect key="frame" x="157" y="213" width="41" height="21"/>
+                                <rect key="frame" x="157" y="257" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.010106783859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to fight!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fQ-vI-yEX">
-                                <rect key="frame" x="132" y="345" width="111" height="21"/>
+                                <rect key="frame" x="132" y="389" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,11 +100,43 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THW-Ay-BUE">
-                                <rect key="frame" x="213" y="213" width="68" height="21"/>
+                                <rect key="frame" x="213" y="257" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.010106783859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-SB-G30">
+                                <rect key="frame" x="21" y="269" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Giant"/>
+                                <connections>
+                                    <segue destination="eoj-ZP-TM1" kind="show" id="TXQ-PP-XBf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSa-7o-ICZ">
+                                <rect key="frame" x="17" y="307" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prince"/>
+                                <connections>
+                                    <segue destination="obK-Tu-5ep" kind="show" id="yQe-4s-Lfw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHU-Ne-dsV">
+                                <rect key="frame" x="18" y="345" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pekka"/>
+                                <connections>
+                                    <segue destination="ToQ-WR-er4" kind="show" id="jWW-0h-Qja"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cV-dJ-v64">
+                                <rect key="frame" x="15" y="380" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Wizard"/>
+                                <connections>
+                                    <segue destination="7Gg-aM-mFl" kind="show" id="ykS-Ii-sTK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -97,6 +165,7 @@
                             <outletCollection property="gestureRecognizers" destination="wxO-Me-Qth" appends="YES" id="eeU-yv-fhW"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="xn7-sd-TxC"/>
                     <connections>
                         <outlet property="Player1Name" destination="ew2-xE-Enw" id="PEA-3h-IBq"/>
                         <outlet property="Player2Name" destination="ASF-ly-qmC" id="5Q0-p4-lV2"/>
@@ -108,11 +177,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLb-vf-Hv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="wxO-Me-Qth">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="q10-uL-OdN"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="Segue1" id="q10-uL-OdN"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-642.39999999999998" y="137.18140929535232"/>
+            <point key="canvasLocation" x="296.80000000000001" y="137.18140929535232"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -122,20 +191,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown-3" translatesAutoresizingMaskIntoConstraints="NO" id="20B-Qe-vLa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown-3" translatesAutoresizingMaskIntoConstraints="NO" id="20B-Qe-vLa">
                                 <rect key="frame" x="67" y="455" width="241" height="212"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="212" id="Q1q-Xo-ITk"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown-2" translatesAutoresizingMaskIntoConstraints="NO" id="MZp-h1-M3q">
-                                <rect key="frame" x="67" y="20" width="241" height="193"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="193" id="B7u-bv-WnP"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown-2" translatesAutoresizingMaskIntoConstraints="NO" id="MZp-h1-M3q">
+                                <rect key="frame" x="67" y="64" width="241" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-Xv-SNy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-Xv-SNy">
                                 <rect key="frame" x="163" y="424" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Attack!">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -143,8 +209,9 @@
                                     <action selector="PlayerTwoAttacks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tpn-Wt-UGH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwT-qo-l1B">
-                                <rect key="frame" x="163" y="210" width="49" height="30.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwT-qo-l1B">
+                                <rect key="frame" x="163" y="254" width="49" height="30.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Attack!">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -152,8 +219,9 @@
                                     <action selector="PlayerOneAttacks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdZ-lY-wEF"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-9V-cxw">
-                                <rect key="frame" x="0.0" y="210" width="170" height="117.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-9V-cxw">
+                                <rect key="frame" x="0.0" y="254" width="170" height="117.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                     djclsdjfnkj" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbn-HH-KqV">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="20.5"/>
@@ -175,58 +243,40 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ki3-q1-sTe">
-                                <rect key="frame" x="183" y="329" width="192.5" height="117.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap To Decide Who Attacks First!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SB-mC-EG6">
+                                <rect key="frame" x="61" y="284" width="253" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ki3-q1-sTe">
+                                <rect key="frame" x="234" y="312" width="141" height="117.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelhjkasdkhasdhkasda" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-5t-Eqo">
-                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jkasdkhasdhkasda" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-5t-Eqo">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6Z-4V-sw4">
-                                        <rect key="frame" x="0.0" y="48.5" width="192.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="48.5" width="141" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTo-ve-ury">
-                                        <rect key="frame" x="0.0" y="97" width="192.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="97" width="141" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Decide Who Attacks First!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SB-mC-EG6">
-                                <rect key="frame" x="61" y="284" width="253" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="centerX" secondItem="WwT-qo-l1B" secondAttribute="centerX" id="8oV-td-hJt"/>
-                            <constraint firstItem="bSV-9V-cxw" firstAttribute="top" secondItem="MZp-h1-M3q" secondAttribute="bottom" constant="-3" id="9Om-F2-jPy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6SB-mC-EG6" secondAttribute="trailing" constant="61" id="9dz-6S-rRB"/>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="leading" secondItem="MZp-h1-M3q" secondAttribute="leading" id="H6I-va-Ovw"/>
-                            <constraint firstItem="bSV-9V-cxw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IKV-Al-8iw"/>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="TmS-XF-Mqy"/>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="top" secondItem="ki3-q1-sTe" secondAttribute="bottom" constant="8.5" id="VRp-ly-D7U"/>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="centerX" secondItem="MZp-h1-M3q" secondAttribute="centerX" id="X5B-H7-8VU"/>
-                            <constraint firstAttribute="trailing" secondItem="ki3-q1-sTe" secondAttribute="trailing" constant="-0.5" id="XgT-Qf-ckD"/>
-                            <constraint firstItem="6SB-mC-EG6" firstAttribute="top" secondItem="WwT-qo-l1B" secondAttribute="bottom" constant="43.5" id="YgJ-FX-F9n"/>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="centerX" secondItem="Qml-Xv-SNy" secondAttribute="centerX" id="aNE-Te-Kis"/>
-                            <constraint firstItem="WwT-qo-l1B" firstAttribute="top" secondItem="MZp-h1-M3q" secondAttribute="bottom" constant="-3" id="gdD-IQ-8Ux"/>
-                            <constraint firstItem="MZp-h1-M3q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iXN-6g-f3b"/>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k8J-rg-1zP"/>
-                            <constraint firstItem="ki3-q1-sTe" firstAttribute="top" secondItem="6SB-mC-EG6" secondAttribute="bottom" constant="24.5" id="ka1-oD-gYM"/>
-                            <constraint firstItem="20B-Qe-vLa" firstAttribute="top" secondItem="Qml-Xv-SNy" secondAttribute="bottom" constant="1" id="kdy-cS-52K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="20B-Qe-vLa" secondAttribute="bottom" id="qb8-Se-1lB"/>
-                            <constraint firstItem="6SB-mC-EG6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="y2b-Q4-CbI"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="GXy-tk-UMU" appends="YES" id="aQi-rC-Qo3"/>
@@ -251,12 +301,142 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="301.60000000000002" y="136.28185907046478"/>
+            <point key="canvasLocation" x="1240.8" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wtm-4T-bTt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p8s-Gy-4Wa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gaY-QF-Wy5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f4g-en-YLw" kind="relationship" relationship="rootViewController" id="A6X-TR-d9e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBK-DK-dZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642.39999999999998" y="137.18140929535232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jlf-yY-qoE">
+            <objects>
+                <viewController id="obK-Tu-5ep" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1C-LK-qXh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Prince" translatesAutoresizingMaskIntoConstraints="NO" id="mRJ-av-jWo">
+                                <rect key="frame" x="67" y="34" width="240" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRINCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7I-PK-0JJ">
+                                <rect key="frame" x="162" y="273" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zr-Z7-gaD">
+                                <rect key="frame" x="0.0" y="343" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Prince is not very strong, but packs a powerful punch. He hits so hard that he has a chance to stun the enemy on every attack.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g6g-Bp-TGh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuM-b9-1is" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="-563"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WuD-94-Tn2">
+            <objects>
+                <viewController id="ToQ-WR-er4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jO5-GK-9Y1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pekka" translatesAutoresizingMaskIntoConstraints="NO" id="kTZ-nh-ypw">
+                                <rect key="frame" x="67" y="34" width="240" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PEKKA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyy-Vs-IXM">
+                                <rect key="frame" x="162" y="273" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp9-GS-b0q">
+                                <rect key="frame" x="0.0" y="343" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Pekka is quite the fighter. He isn't the strongest, but dang well ain't weak. His armor does damage back to whoever hits him.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WKP-2B-2fs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qju-N9-Bvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="-603"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1ev-RH-n80">
+            <objects>
+                <viewController id="7Gg-aM-mFl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zKb-s6-TRp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wizard" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-UV-eCJ">
+                                <rect key="frame" x="67" y="34" width="240" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WIZARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymA-XV-Ggw">
+                                <rect key="frame" x="162" y="273" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rty-zy-2uH">
+                                <rect key="frame" x="0.0" y="343" width="375" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Wizard is quite fragile, but if he touches you with his fireball, you will be burned to DEATH! His fireball has a chance to cath the opponent on fire, dealing damage over time. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xae-kg-gbL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tL8-jE-rrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="-564"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Giant" width="206" height="245"/>
+        <image name="Pekka" width="206" height="245"/>
+        <image name="Prince" width="206" height="245"/>
         <image name="Unknown-2" width="206" height="245"/>
         <image name="Unknown-3" width="206" height="245"/>
+        <image name="Wizard" width="206" height="245"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="q10-uL-OdN"/>
